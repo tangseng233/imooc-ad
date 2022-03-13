@@ -16,6 +16,7 @@
     <modules>
         <module>eureka-ad</module>
         <module>gateway-ad</module>
+        <module>service-ad</module>
     </modules>
     <packaging>pom</packaging>
     <description>慕课网微服务父工程</description>
