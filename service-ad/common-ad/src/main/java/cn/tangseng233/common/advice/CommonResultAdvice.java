@@ -16,10 +16,10 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
  * @Date 2022-03-13 21:11
  **/
 @RestControllerAdvice
+@SuppressWarnings("all")
 public class CommonResultAdvice implements ResponseBodyAdvice<Object> {
 
     @Override
-    @SuppressWarnings("all")
     public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> aClass) {
         //是否对ResponseBody进行增强
         if (methodParameter.getDeclaringClass().isAnnotationPresent(IgnoreCommonResultAdvice.class)) {
